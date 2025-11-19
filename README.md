@@ -78,45 +78,12 @@ src/
 - Scroll-to-top button with fade in/out
 - Mobile menu with slide animations
 
-## 🎯 Customization
-
-### Colors
-
-Edit `tailwind.config.js` to customize the color scheme:
-
-```javascript
-theme: {
-  extend: {
-    colors: {
-      primary: '#1e40af',
-      secondary: '#3b82f6',
-    },
-  },
-}
-```
-
-### Content
-
-Update the content in each component file to match your requirements.
-
-## 📱 Responsive Breakpoints
-
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: > 1024px
-
-## 🚀 Deployment
-
-The project can be deployed to any static hosting service:
-
-- **Vercel**: `vercel --prod`
-- **Netlify**: Connect your Git repository
-- **GitHub Pages**: Use GitHub Actions for deployment
-
 ## 📄 License
 
 This project is open source and available for use.
 
 ## 🤝 Contributing
 
-Feel free to submit issues and enhancement requests!
+Gagan Gupta 
+✉️ gagan.gupta2906@gmail.com 
+📞 8247555493
