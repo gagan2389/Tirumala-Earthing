@@ -43,12 +43,9 @@ const AboutUs = () => {
             </div>
 
             {/* Certifications Section */}
-            <div>
-              <h2 className="text-3xl font-bold text-[#fa171a] mb-6">
-                Certifications
-              </h2>
-              
-              <div className="flex flex-col sm:flex-row gap-8 items-center justify-center">
+            <div className='h-full flex items-center justify-center'>
+
+              <div className="flex flex-row gap-4 sm:gap-8 items-center justify-center">
                 {/* ISO Certification */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -56,10 +53,10 @@ const AboutUs = () => {
                   transition={{ delay: 0.2 }}
                   className="flex flex-col items-center"
                 >
-                  <img 
-                    src={isoLogo} 
-                    alt="ISO 9001:2015 Certified Company" 
-                    className="w-48 h-48 object-contain"
+                  <img
+                    src={isoLogo}
+                    alt="ISO 9001:2015 Certified Company"
+                    className="w-32 h-32 sm:w-48 sm:h-48 object-contain"
                   />
                 </motion.div>
 
@@ -70,10 +67,10 @@ const AboutUs = () => {
                   transition={{ delay: 0.4 }}
                   className="flex flex-col items-center"
                 >
-                  <img 
-                    src={apcpdclLogo} 
-                    alt="APCPDCL Approved Vendor" 
-                    className="w-48 h-48 object-contain"
+                  <img
+                    src={apcpdclLogo}
+                    alt="APCPDCL Approved Vendor"
+                    className="w-32 h-32 sm:w-48 sm:h-48 object-contain"
                   />
                 </motion.div>
               </div>
@@ -94,7 +91,7 @@ const AboutUs = () => {
               <h2 className="text-3xl font-bold text-[#fa171a] mb-6">
                 Why Us?
               </h2>
-              
+
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <span className="text-[#fa171a] mr-3 mt-1">•</span>
@@ -139,21 +136,19 @@ const AboutUs = () => {
                 <div className="flex border-b-2 border-gray-200">
                   <button
                     onClick={() => setActiveTab('mission')}
-                    className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${
-                      activeTab === 'mission'
+                    className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${activeTab === 'mission'
                         ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
                         : '!text-[#fa171a]'
-                    }`}
+                      }`}
                   >
                     Mission
                   </button>
                   <button
                     onClick={() => setActiveTab('vision')}
-                    className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${
-                      activeTab === 'vision'
+                    className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${activeTab === 'vision'
                         ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
                         : '!text-[#fa171a]'
-                    }`}
+                      }`}
                   >
                     Vision
                   </button>
@@ -188,20 +183,20 @@ const AboutUs = () => {
               </div>
 
               {/* Warranty Badges Below Mission/Vision */}
-              <div className="flex flex-col sm:flex-row gap-6 mt-8 items-center justify-center">
+              <div className="flex flex-row gap-4 sm:gap-6 mt-8 items-center justify-center">
                 {/* Warranty Badge */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.6 }}
-                  className="flex flex-col items-center bg-white p-4 rounded-lg"
+                  className="flex flex-col items-center bg-white p-2 sm:p-4 rounded-lg"
                 >
-                 <img 
-  src={warrantyBadge} 
-  alt="5 Year Warranty Guaranteed" 
-  className="w-48 h-48 object-contain bg-white"
-  style={{ backgroundColor: '#ffffff' }}
-/>
+                  <img
+                    src={warrantyBadge}
+                    alt="5 Year Warranty Guaranteed"
+                    className="w-32 h-32 sm:w-48 sm:h-48 object-contain bg-white"
+                    style={{ backgroundColor: '#ffffff' }}
+                  />
 
                 </motion.div>
 
@@ -210,12 +205,12 @@ const AboutUs = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.7 }}
-                  className="flex flex-col items-center bg-white p-4 rounded-lg"
+                  className="flex flex-col items-center bg-white p-2 sm:p-4 rounded-lg"
                 >
-                  <img 
-                    src={satisfactionBadge} 
-                    alt="100% Satisfaction Guaranteed" 
-                    className="w-48 h-48 object-contain"
+                  <img
+                    src={satisfactionBadge}
+                    alt="100% Satisfaction Guaranteed"
+                    className="w-32 h-32 sm:w-48 sm:h-48 object-contain"
                   />
                 </motion.div>
               </div>

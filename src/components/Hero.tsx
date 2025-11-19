@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 import { Button } from 'antd';
 import { ArrowRight, Shield, Zap, Award } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import homeImage from '../images/homeImage.png';
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   const features = [
     { icon: Shield, text: 'Certified Products' },
     { icon: Zap, text: 'Expert Installation' },
@@ -14,6 +18,10 @@ const Hero = () => {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const navigateToProducts = () => {
+    navigate('/products');
   };
 
   return (
@@ -66,7 +74,7 @@ const Hero = () => {
                 Get Free Quote
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button size="large" className="h-12 px-8">
+              <Button size="large" className="h-12 px-8" onClick={navigateToProducts}>
                 Our Products
               </Button>
             </motion.div>
@@ -100,58 +108,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative overflow-hidden"
           >
-            <div className="relative z-10">
-              <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 shadow-2xl">
-                <div className="bg-white rounded-lg p-6 space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <Zap className="w-8 h-8 text-blue-600" />
-                    </div>
-                    <div className="text-right">
-                      <p className="text-2xl font-bold text-gray-900">100%</p>
-                      <p className="text-sm text-gray-600">Safety</p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: '100%' }}
-                        transition={{ duration: 1, delay: 1 }}
-                        className="h-full bg-blue-600"
-                      />
-                    </div>
-                    <p className="text-sm text-gray-600">Earthing Efficiency</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Decorative Elements */}
-            <motion.div
-              animate={{
-                scale: [1, 1.1, 1],
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="hidden md:block absolute -top-10 -right-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl -z-10"
-            />
-            <motion.div
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.2, 0.4, 0.2],
-              }}
-              transition={{
-                duration: 2.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.5,
-              }}
-              className="hidden md:block absolute -bottom-10 -left-10 w-32 h-32 bg-blue-300 rounded-full blur-3xl -z-10"
+            <img 
+              src={homeImage} 
+              alt="Earthing Solutions" 
+              className="w-full h-auto rounded-lg shadow-lg"
             />
           </motion.div>
         </div>
