@@ -61,7 +61,7 @@ const WhyChooseUs = () => {
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   className="flex items-center gap-2.5 text-gray-800 text-base"
                 >
-                  <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#fa171a] flex-shrink-0" />
                   <span className="font-semibold">{benefit}</span>
                 </motion.li>
               ))}
