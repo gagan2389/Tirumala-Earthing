@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#fa171a] mb-6">
               Why Choose Us
             </h2>
             <ul className="space-y-2.5">
@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     className="mb-3"
                   >
-                    <div className="w-14 h-14 bg-orange-500 rounded-lg flex items-center justify-center">
+                    <div className="w-14 h-14 bg-[#fa171a] rounded-lg flex items-center justify-center">
                       <feature.icon className="w-7 h-7 text-white" />
                     </div>
                   </motion.div>
@@ -121,7 +121,7 @@ const WhyChooseUs = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-white text-purple-600 px-3 py-2 rounded font-semibold text-xs hover:bg-gray-100 transition-colors flex items-center justify-center gap-1.5"
+                    className="bg-white text-[#fa171a] px-3 py-2 rounded font-semibold text-xs hover:bg-gray-100 transition-colors flex items-center justify-center gap-1.5"
                   >
                     Know More
                     <span className="text-sm">&gt;&gt;</span>

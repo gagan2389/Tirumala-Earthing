@@ -11,7 +11,7 @@ const Header = () => {
   const menuItems = [
     { label: 'Home', href: '/', isRoute: true },
     { label: 'About Us', href: '/about', isRoute: true },
-    { label: 'Products', href: '#products', isRoute: false },
+    { label: 'Products', href: '/products', isRoute: true },
     { label: 'Services', href: '#services', isRoute: false },
     { label: 'Contact', href: '/contact', isRoute: true },
   ];
@@ -49,9 +49,9 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2"
             >
-              <img 
-                src={logo} 
-                alt="Tirumala Earthing Logo" 
+              <img
+                src={logo}
+                alt="Tirumala Earthing Logo"
                 className="w-40 h-40 object-contain"
               />
             </motion.div>
@@ -70,7 +70,7 @@ const Header = () => {
                 >
                   <Link
                     to={item.href}
-                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                    className="text-gray-700 hover:text-[#fa171a] font-medium transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -83,7 +83,7 @@ const Header = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  className="text-gray-700 hover:text-[#fa171a] font-medium transition-colors"
                 >
                   {item.label}
                 </motion.a>

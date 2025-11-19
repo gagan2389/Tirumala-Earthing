@@ -11,8 +11,8 @@ const Services = () => {
       description: 'Protect your home and family with reliable earthing and lightning protection systems. Expert installation for residential properties ensuring complete electrical safety.',
       overlayColor: 'bg-slate-800/70',
       backgroundImage: residentialImage,
-      buttonStyle: 'bg-white text-purple-600 border-purple-600 hover:bg-gray-50',
-      iconColor: 'text-purple-600',
+      buttonStyle: 'bg-white text-[#fa171a] border-[#fa171a] hover:bg-gray-50',
+      iconColor: 'text-[#fa171a]',
     },
     {
       title: 'Commercial Services',
@@ -27,8 +27,8 @@ const Services = () => {
       description: 'Advanced earthing and lightning protection for industrial facilities, power plants, and manufacturing units. Robust solutions designed for heavy-duty applications.',
       overlayColor: 'bg-gray-900/80',
       backgroundImage: industrialImage,
-      buttonStyle: 'bg-white text-purple-600 border-purple-600 hover:bg-gray-50',
-      iconColor: 'text-purple-600',
+      buttonStyle: 'bg-white text-[#fa171a] border-[#fa171a] hover:bg-gray-50',
+      iconColor: 'text-[#fa171a]',
     },
   ];
 

@@ -52,7 +52,7 @@ const EarthingSolution = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#fa171a] mb-6">
             EARTHING SOLUTION – A RIGHT ADVANCED EARTHING SYSTEM FOR THE RIGHT APPLICATION!
           </h2>
           
@@ -61,7 +61,7 @@ const EarthingSolution = () => {
               If you are looking for the best earthing solution, you are in the right place. Earthing is an important aspect of electrical systems. It is a must for expensive and delicate equipment to avoid shock or any major hazard. Earthing is an important aspect in the electrical segment.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              People often avoid spending on earthing and lightning protection, which may compromise quality. A good quality earthing product is important. The <strong className="text-blue-600">TIRUMALA ADVANCED EARTHING SYSTEM</strong> always meets the customer requirement and at the same time, we also maintain the quality.
+              People often avoid spending on earthing and lightning protection, which may compromise quality. A good quality earthing product is important. The <strong className="text-[#fa171a]">TIRUMALA ADVANCED EARTHING SYSTEM</strong> always meets the customer requirement and at the same time, we also maintain the quality.
             </p>
           </div>
         </motion.div>
@@ -82,10 +82,10 @@ const EarthingSolution = () => {
           <div className="hidden md:block overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-blue-600 text-white">
-                  <th className="px-4 py-4 text-left font-semibold border border-gray-300">S.No</th>
-                  <th className="px-4 py-4 text-left font-semibold border border-gray-300">Traditional Method Of Earthing</th>
-                  <th className="px-4 py-4 text-left font-semibold border border-gray-300">TIRUMALA ADVANCED EARTHING SYSTEM</th>
+                <tr className="bg-[#fa171a] text-white">
+                  <th className="px-4 py-4 text-left font-semibold border border-[#fa171a]">S.No</th>
+                  <th className="px-4 py-4 text-left font-semibold border border-[#fa171a]">Traditional Method Of Earthing</th>
+                  <th className="px-4 py-4 text-left font-semibold border border-[#fa171a]">TIRUMALA ADVANCED EARTHING SYSTEM</th>
                 </tr>
               </thead>
               <tbody>

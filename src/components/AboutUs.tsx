@@ -17,9 +17,9 @@ const AboutUs = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            About <span className="text-blue-600">Us</span>
+            About <span className="text-[#fa171a]">Us</span>
           </h1>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4" />
+          <div className="w-24 h-1 bg-[#fa171a] mx-auto mb-4" />
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Learn more about our company and our commitment to excellence
           </p>
@@ -34,7 +34,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Company Profile Section */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-blue-700">
+              <h2 className="text-3xl font-bold text-[#fa171a] mb-6">
                 Company Profile
               </h2>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -44,7 +44,7 @@ const AboutUs = () => {
 
             {/* Certifications Section */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-blue-700">
+              <h2 className="text-3xl font-bold text-[#fa171a] mb-6">
                 Certifications
               </h2>
               
@@ -91,41 +91,41 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Section - Why Us */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-blue-700">
+              <h2 className="text-3xl font-bold text-[#fa171a] mb-6">
                 Why Us?
               </h2>
               
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">EASY TO INSTALL</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">COST EFFECTIVE</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">LESS AREA CONSUMPTION</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">CORROSION PROOF</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">LOW EARTH RESISTANCE</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">STABLE EARTH VALUES</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">PERSONAL & EQUIPMENT SAFETY</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
+                  <span className="text-[#fa171a] mr-3 mt-1">•</span>
                   <span className="text-gray-700 text-lg">MINIMUM LIFE IS 25 YEARS</span>
                 </li>
               </ul>
@@ -141,8 +141,8 @@ const AboutUs = () => {
                     onClick={() => setActiveTab('mission')}
                     className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${
                       activeTab === 'mission'
-                        ? 'text-blue-700 border-b-4 border-gray-700'
-                        : 'text-blue-700'
+                        ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
+                        : '!text-[#fa171a]'
                     }`}
                   >
                     Mission
@@ -151,8 +151,8 @@ const AboutUs = () => {
                     onClick={() => setActiveTab('vision')}
                     className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${
                       activeTab === 'vision'
-                        ? 'text-blue-700 border-b-4 border-gray-700'
-                        : 'text-blue-700'
+                        ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
+                        : '!text-[#fa171a]'
                     }`}
                   >
                     Vision
