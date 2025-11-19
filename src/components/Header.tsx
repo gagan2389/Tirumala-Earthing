@@ -12,7 +12,7 @@ const Header = () => {
     { label: 'Home', href: '/', isRoute: true },
     { label: 'About Us', href: '/about', isRoute: true },
     { label: 'Products', href: '/products', isRoute: true },
-    { label: 'Services', href: '#services', isRoute: false },
+    // { label: 'Services', href: '#services', isRoute: false },
     { label: 'Contact', href: '/contact', isRoute: true },
   ];
 
