@@ -7,6 +7,7 @@ import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import ContactPage from './components/ContactPage';
 import Contact from './components/Contact';
+import Products from './components/Products';
 
 function AppContent() {
   const location = useLocation();
@@ -27,11 +28,12 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       {location.pathname !== '/contact' && <Contact />}
       <Footer />
-      
+
       {/* Scroll to Top Button */}
       <ScrollToTop />
     </div>
@@ -75,7 +77,7 @@ const ScrollToTop = () => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       onClick={scrollToTop}
-      className="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center z-50 hover:bg-blue-700 transition-colors"
+      className="fixed bottom-8 right-8 w-12 h-12 bg-[#fa171a] text-white rounded-full shadow-lg flex items-center justify-center z-50 hover:bg-[#fa171a]/80 transition-colors"
       aria-label="Scroll to top"
     >
       <svg

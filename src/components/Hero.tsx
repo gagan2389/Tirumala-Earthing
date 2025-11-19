@@ -30,7 +30,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4"
+              className="inline-block px-4 py-2 bg-[#fa171a] text-white rounded-full text-sm font-semibold mb-4"
             >
               Leading Earthing Solutions
             </motion.div>
@@ -42,7 +42,7 @@ const Hero = () => {
               className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
             >
               Professional{' '}
-              <span className="text-blue-600">Earthing & Lightning</span>{' '}
+              <span className="text-[#fa171a]">Earthing & Lightning</span>{' '}
               Protection Solutions
             </motion.h1>
             
@@ -62,7 +62,7 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap gap-4 mb-8"
             >
-              <Button type="primary" size="large" className="h-12 px-8" onClick={scrollToContact}>
+              <Button size="large" className="h-12 px-8 !bg-[#fa171a] !text-white !rounded-lg !font-semibold hover:!bg-[#fa171a]/90 !text-sm !md:text-base !border-none" onClick={scrollToContact}>
                 Get Free Quote
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -84,8 +84,8 @@ const Hero = () => {
                   whileHover={{ scale: 1.05 }}
                   className="flex items-center space-x-2"
                 >
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <feature.icon className="w-5 h-5 text-blue-600" />
+                  <div className="w-10 h-10 bg-[#fa171a] rounded-lg flex items-center justify-center">
+                    <feature.icon className="w-5 h-5 text-white" />
                   </div>
                   <span className="text-gray-700 font-medium">{feature.text}</span>
                 </motion.div>

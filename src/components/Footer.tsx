@@ -33,17 +33,17 @@ const Footer = () => {
       links: [
         { label: 'Home', href: '/', isRoute: true },
         { label: 'About Us', href: '/about', isRoute: true },
-        { label: 'Products', href: '#products', isRoute: false },
+        { label: 'Products', href: '/products', isRoute: true },
         { label: 'Services', href: '#services', isRoute: false },
       ],
     },
     {
       title: 'Products',
       links: [
-        { label: 'Earthing Electrodes', href: '#products' },
-        { label: 'Lightning Arresters', href: '#products' },
-        { label: 'Earthing Accessories', href: '#products' },
-        { label: 'Chemical Earthing', href: '#products' },
+        { label: 'Earthing Electrodes', href: '/products', isRoute: true },
+        { label: 'Lightning Arresters', href: '/products', isRoute: true },
+        { label: 'Earthing Accessories', href: '/products', isRoute: true },
+        { label: 'Chemical Earthing', href: '/products', isRoute: true },
       ],
     },
     {
@@ -58,7 +58,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white mt-20">
+    <footer className="bg-gray-900 text-white">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -136,17 +136,17 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-10 h-10 text-blue-600 mt-1" />
+                <MapPin className="w-10 h-10 text-[#fa171a]" />
                 <span className="text-gray-400 text-sm">
                   11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-400 text-sm">+91-9347644772</span>
+                <Phone className="w-5 h-5 text-[#fa171a]" />
+                <span className="text-gray-400 text-sm">+91-9347644772 / +91-8332993388</span>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-blue-600" />
+                <Mail className="w-5 h-5 text-[#fa171a]" />
                 <span className="text-gray-400 text-sm">info@tirumalaearthing.com</span>
               </li>
             </ul>

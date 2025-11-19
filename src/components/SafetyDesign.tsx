@@ -27,7 +27,7 @@ const SafetyDesign = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#fa171a] mb-6">
             Safety through design
           </h2>
           <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -62,7 +62,7 @@ const SafetyDesign = () => {
           >
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
               Our Wide{' '}
-              <span className="bg-purple-600 text-white px-2 py-1 rounded">
+              <span className="bg-[#fa171a] text-white px-2 py-1 rounded">
                 range
               </span>{' '}
               of Maintenance Free Products
@@ -96,7 +96,7 @@ const SafetyDesign = () => {
               <Button
                 type="primary"
                 size="large"
-                className="bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 h-12 px-8 rounded-lg font-semibold"
+                className="!bg-[#fa171a] !text-white !rounded-lg !font-semibold hover:!bg-[#fa171a]/90 !text-sm !md:text-base !border-none"
               >
                 Know More <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

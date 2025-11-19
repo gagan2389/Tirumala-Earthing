@@ -22,25 +22,41 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91-9347644772',
-      color: 'from-blue-500 to-blue-600',
+      content: '+91-9347644772 / +91-8332993388',
+      color: 'from-[#fa171a] to-[#fa171a]',
     },
     {
       icon: Mail,
       title: 'Email',
       content: 'info@tirumalaearthing.com',
-      color: 'from-green-500 to-green-600',
+      color: 'from-[#fa171a] to-[#fa171a]',
     },
     {
       icon: MapPin,
       title: 'Address',
       content: '11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001',
-      color: 'from-purple-500 to-purple-600',
+      color: 'from-[#fa171a] to-[#fa171a]',
     },
   ];
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
+      <style>{`
+        .ant-input:focus,
+        .ant-input-focused,
+        .ant-input-affix-wrapper:focus,
+        .ant-input-affix-wrapper-focused {
+          border-color: #fa171a !important;
+          box-shadow: 0 0 0 2px rgba(250, 23, 26, 0.2) !important;
+        }
+        .ant-input:hover,
+        .ant-input-affix-wrapper:hover {
+          border-color: #fa171a !important;
+        }
+        .ant-input-affix-wrapper-focused .ant-input {
+          border-color: transparent !important;
+        }
+      `}</style>
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
@@ -51,9 +67,9 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Get In <span className="text-blue-600">Touch</span>
+            Get In <span className="text-[#fa171a]">Touch</span>
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4" />
+          <div className="w-24 h-1 bg-[#fa171a] mx-auto mb-4" />
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
@@ -68,7 +84,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-[#fa171a] mb-6">
                 Send us a Message
               </h3>
               <Form
@@ -112,10 +128,9 @@ const Contact = () => {
                 </Form.Item>
                 <Form.Item>
                   <Button
-                    type="primary"
                     htmlType="submit"
                     loading={loading}
-                    className="w-full h-12"
+                    className="w-full h-12 !bg-[#fa171a] !text-white !rounded-lg !font-semibold hover:!bg-[#fa171a]/90 !text-sm !md:text-base !border-none"
                     icon={<Send className="w-4 h-4" />}
                   >
                     Send Message
