@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs';
 import ContactPage from './components/ContactPage';
 import Contact from './components/Contact';
 import Products from './components/Products';
+import Certificates from './components/Certificates';
 
 function AppContent() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/certificates" element={<Certificates />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       {location.pathname !== '/contact' && <Contact />}

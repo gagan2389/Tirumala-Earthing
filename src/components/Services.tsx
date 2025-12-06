@@ -32,6 +32,13 @@ const Services = () => {
     },
   ];
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="services" className="py-0">
       <div className="grid grid-cols-1 md:grid-cols-3">
@@ -85,6 +92,7 @@ const Services = () => {
                 transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={scrollToContact}
                 className={`px-6 py-3 rounded-lg font-semibold border-2 transition-all flex items-center gap-2 ${service.buttonStyle}`}
               >
                 Contact Us
