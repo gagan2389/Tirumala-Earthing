@@ -1,21 +1,50 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Form, Input, Button, message } from 'antd';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import TextArea from 'antd/es/input/TextArea';
 
 const Contact = () => {
   const [form] = Form.useForm();
+  const [messageApi, contextHolder] = message.useMessage();
   const [loading, setLoading] = useState(false);
+  const [charCount, setCharCount] = useState(0);
 
-  const onFinish = async () => {
+  const onFinish = async (values: any) => {
     setLoading(true);
-    // Simulate API call
-    setTimeout(() => {
-      message.success('Thank you! We will contact you soon.');
-      form.resetFields();
+    try {
+      const formData = new FormData();
+      formData.append('name', values.name);
+      formData.append('email', values.email);
+      formData.append('phoneNumber', values.phoneNumber);
+      formData.append('subject', values.subject);
+      formData.append('message', values.message);
+
+      const response = await fetch("https://formbold.com/s/91m7B", {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData,
+      });
+
+      if (response.ok) {
+        messageApi.success('Message sent successfully!');
+        form.resetFields();
+        setCharCount(0);
+      } else {
+        messageApi.error('Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Submission Error:', error);
+      messageApi.error('Failed to send message.');
+    } finally {
       setLoading(false);
-    }, 1500);
+    }
+  };
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setCharCount(e.target.value.length);
   };
 
   const contactInfo = [
@@ -41,6 +70,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
+      {contextHolder}
       <style>{`
         .ant-input:focus,
         .ant-input-focused,
@@ -109,8 +139,11 @@ const Contact = () => {
                   <Input placeholder="Your Email" />
                 </Form.Item>
                 <Form.Item
-                  name="phone"
-                  rules={[{ required: true, message: 'Please enter your phone number' }]}
+                  name="phoneNumber"
+                  rules={[
+                    { required: true, message: 'Please enter your phone number' },
+                    { pattern: /^\d{10}$/, message: 'Please enter a valid phone number' }
+                  ]}
                 >
                   <Input placeholder="Your Phone Number" />
                 </Form.Item>
@@ -123,9 +156,18 @@ const Contact = () => {
                 <Form.Item
                   name="message"
                   rules={[{ required: true, message: 'Please enter your message' }]}
+                  className="mb-2"
                 >
-                  <TextArea rows={5} placeholder="Your Message" />
+                  <TextArea
+                    rows={5}
+                    placeholder="Your Message"
+                    maxLength={500}
+                    onChange={handleMessageChange}
+                  />
                 </Form.Item>
+                <div className="text-right text-gray-400 text-xs mb-4">
+                  {charCount} / 500
+                </div>
                 <Form.Item>
                   <Button
                     htmlType="submit"
