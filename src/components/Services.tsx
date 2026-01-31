@@ -56,6 +56,9 @@ const Services = () => {
               <img
                 src={service.backgroundImage}
                 alt={service.title}
+                width={1536}
+                height={1024}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

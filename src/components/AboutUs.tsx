@@ -56,6 +56,9 @@ const AboutUs = () => {
                   <img
                     src={isoLogo}
                     alt="ISO 9001:2015 Certified Company"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
                     className="w-32 h-32 sm:w-48 sm:h-48 object-contain"
                   />
                 </motion.div>
@@ -70,6 +73,9 @@ const AboutUs = () => {
                   <img
                     src={apcpdclLogo}
                     alt="APCPDCL Approved Vendor"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
                     className="w-32 h-32 sm:w-48 sm:h-48 object-contain"
                   />
                 </motion.div>
@@ -194,6 +200,9 @@ const AboutUs = () => {
                   <img
                     src={warrantyBadge}
                     alt="5 Year Warranty Guaranteed"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
                     className="w-32 h-32 sm:w-48 sm:h-48 object-contain bg-white"
                     style={{ backgroundColor: '#ffffff' }}
                   />
@@ -210,6 +219,9 @@ const AboutUs = () => {
                   <img
                     src={satisfactionBadge}
                     alt="100% Satisfaction Guaranteed"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
                     className="w-32 h-32 sm:w-48 sm:h-48 object-contain"
                   />
                 </motion.div>

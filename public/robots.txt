@@ -1,9 +1,6 @@
 User-agent: *
 Allow: /
 
-# Allow search indexing, disallow AI training
-Content-Signal: search=yes, ai-train=no
-
 # Block AI / external bots
 User-agent: Amazonbot
 Disallow: /

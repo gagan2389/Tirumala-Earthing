@@ -9,6 +9,7 @@ import ContactPage from './components/ContactPage';
 import Contact from './components/Contact';
 import Products from './components/Products';
 import Certificates from './components/Certificates';
+import WhyChooseUs from './components/WhyChooseUs';
 
 function AppContent() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function AppContent() {
         <Route path="/products" element={<Products />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/why-choose-us" element={<WhyChooseUs />} />
       </Routes>
       {location.pathname !== '/contact' && <Contact />}
       <Footer />

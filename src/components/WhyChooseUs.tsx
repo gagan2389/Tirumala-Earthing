@@ -90,6 +90,9 @@ const WhyChooseUs = () => {
                   <img
                     src={feature.image}
                     alt={feature.title}
+                    width={1536}
+                    height={1024}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gray-900/70 group-hover:bg-gray-900/60 transition-colors" />
@@ -113,7 +116,7 @@ const WhyChooseUs = () => {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-200 text-xs mb-4 flex-grow leading-relaxed">
+                  <p className="text-gray-100 text-xs mb-4 flex-grow leading-relaxed">
                     {feature.description}
                   </p>
 
