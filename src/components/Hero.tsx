@@ -111,9 +111,6 @@ const Hero = () => {
             <img
               src={homeImage}
               alt="Earthing Solutions"
-              width={1536}
-              height={1024}
-              fetchPriority="high"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </motion.div>

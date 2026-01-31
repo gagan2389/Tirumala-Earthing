@@ -53,8 +53,6 @@ const Header = () => {
               <img
                 src={logo}
                 alt="Tirumala Earthing Logo"
-                width={684}
-                height={592}
                 className="w-15 h-15 object-contain"
               />
             </motion.div>
@@ -115,7 +113,6 @@ const Header = () => {
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

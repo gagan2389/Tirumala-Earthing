@@ -55,7 +55,7 @@ const EarthingSolution = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-[#fa171a] mb-6">
             EARTHING SOLUTION – A RIGHT ADVANCED EARTHING SYSTEM FOR THE RIGHT APPLICATION!
           </h2>
-
+          
           <div className="max-w-6xl mx-auto space-y-4 text-left mb-8">
             <p className="text-gray-700 leading-relaxed">
               If you are looking for the best earthing solution, you are in the right place. Earthing is an important aspect of electrical systems. It is a must for expensive and delicate equipment to avoid shock or any major hazard. Earthing is an important aspect in the electrical segment.
@@ -131,12 +131,12 @@ const EarthingSolution = () => {
                 className="bg-white border-2 border-gray-200 rounded-lg p-4 shadow-md"
               >
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-[#fa171a] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                  <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
                     {index + 1}
                   </span>
                   <h4 className="text-sm font-semibold text-gray-900">Comparison {index + 1}</h4>
                 </div>
-
+                
                 <div className="space-y-3">
                   <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
                     <div className="flex items-start gap-2">
@@ -147,7 +147,7 @@ const EarthingSolution = () => {
                       </div>
                     </div>
                   </div>
-
+                  
                   <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
                     <div className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />

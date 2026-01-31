@@ -48,9 +48,6 @@ const SafetyDesign = () => {
             <img
               src={rangeImage}
               alt="Earthing and Lightning Protection Products"
-              width={1024}
-              height={1536}
-              loading="lazy"
               className="w-full max-w-md md:max-w-lg lg:max-w-full h-auto rounded-lg shadow-lg object-contain mx-auto lg:mx-0"
             />
           </motion.div>

@@ -107,9 +107,6 @@ const Products = () => {
                                 <motion.img
                                     src={product.image}
                                     alt={product.name}
-                                    width={1024}
-                                    height={1536}
-                                    loading="lazy"
                                     className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                                     whileHover={{ scale: 1.05 }}
                                 />

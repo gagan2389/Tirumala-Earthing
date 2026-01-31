@@ -51,9 +51,9 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} alt="Tirumala Earthing Logo" width={684} height={592} className="h-20 w-auto" />
+              <img src={logo} alt="Tirumala Earthing Logo" className="h-20 w-auto" />
             </div>
-            <p className="text-gray-300 text-sm mb-4">
+            <p className="text-gray-400 text-sm mb-4">
               Tirumala Tech (Tirumala Earthing) is a leading provider of Professional Chemical Earthing, Lightning Arrestors, and Electrodes. Experts in Vijayawada Earthing & Electric infrastructure.
             </p>
             {/* <div className="flex space-x-4">
@@ -87,7 +87,7 @@ const Footer = () => {
                     {'isRoute' in link && link.isRoute ? (
                       <Link
                         to={link.href}
-                        className="text-gray-300 hover:text-white transition-colors text-sm"
+                        className="text-gray-400 hover:text-white transition-colors text-sm"
                       >
                         {link.label}
                       </Link>
@@ -98,7 +98,7 @@ const Footer = () => {
                           e.preventDefault();
                           handleHashLink(link.href);
                         }}
-                        className="text-gray-300 hover:text-white transition-colors text-sm cursor-pointer"
+                        className="text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
                       >
                         {link.label}
                       </a>
@@ -121,14 +121,14 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <div className="flex flex-col gap-1">
-                  <span className="text-gray-300 text-sm">
+                  <span className="text-gray-400 text-sm">
                     Columbo Electricals, 11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001
                   </span>
                   <a
                     href={'https://maps.app.goo.gl/Dahd4znJaJ1RA2at7'}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-gray-300 hover:underline font-medium text-sm whitespace-nowrap"
+                    className="inline-block text-gray-400 hover:underline font-medium text-sm whitespace-nowrap"
                   >
                     Get Direction →
                   </a>
@@ -136,11 +136,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-white shrink-0" />
-                <span className="text-gray-300 text-sm">+91-9347644772 / +91-8332993388</span>
+                <span className="text-gray-400 text-sm">+91-9347644772 / +91-8332993388</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-white shrink-0" />
-                <span className="text-gray-300 text-sm">info@tirumalatech.in</span>
+                <span className="text-gray-400 text-sm">info@tirumalatech.in</span>
               </li>
             </ul>
           </motion.div>
@@ -151,7 +151,7 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-300 text-sm"
+          className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm"
         >
           <p>&copy; {currentYear} Tirumala Earthing. All rights reserved.</p>
         </motion.div>
