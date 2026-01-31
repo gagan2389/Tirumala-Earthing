@@ -6,7 +6,7 @@ import homeImage from '../images/homeImage.png';
 
 const Hero = () => {
   const navigate = useNavigate();
-  
+
   const features = [
     { icon: Shield, text: 'Certified Products' },
     { icon: Zap, text: 'Expert Installation' },
@@ -42,7 +42,7 @@ const Hero = () => {
             >
               Leading Earthing Solutions
             </motion.div>
-            
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -51,17 +51,17 @@ const Hero = () => {
             >
               Professional{' '}
               <span className="text-[#fa171a]">Earthing & Lightning</span>{' '}
-              Protection Solutions
+              Arrestor Solutions in Vijayawada
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-600 mb-8 leading-relaxed"
             >
-              Trusted by industries nationwide for reliable electrical safety solutions. 
-              We provide top-quality earthing systems and lightning protection with expert installation.
+              Trusted by industries nationwide, <span className="font-semibold">Tirumala Tech (Tirumala Earthing)</span> provides reliable electrical safety.
+              We specialize in Chemical Earthing, Lightning Arrestors, and high-quality Electrodes for superior Vijayawada Earthing & Electric infrastructure.
             </motion.p>
 
             <motion.div
@@ -108,9 +108,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative overflow-hidden"
           >
-            <img 
-              src={homeImage} 
-              alt="Earthing Solutions" 
+            <img
+              src={homeImage}
+              alt="Earthing Solutions"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </motion.div>

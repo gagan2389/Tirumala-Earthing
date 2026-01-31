@@ -87,7 +87,7 @@ const Products = () => {
                         Our <span className="text-[#fa171a]">Products</span>
                     </h1>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-                        High-quality earthing solutions designed to ensure safety and reliability for residential, commercial, and industrial applications.
+                        Premium Chemical Earthing, Lightning Arrestors, and Electrodes designed by <span className="font-semibold text-[#fa171a]">Tirumala Earthing</span>. High-quality solutions for safety across Vijayawada.
                     </p>
                 </motion.div>
 

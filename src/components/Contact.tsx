@@ -101,7 +101,7 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-[#fa171a] mx-auto mb-4" />
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Contact <span className="font-semibold text-[#fa171a]">Tirumala Tech (Tirumala Earthing)</span> for the best Chemical Earthing and Lightning protection services in Vijayawada. We're here to help with your electrical safety needs.
           </p>
         </motion.div>
 

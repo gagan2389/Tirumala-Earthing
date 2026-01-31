@@ -72,7 +72,7 @@ const Footer = () => {
               <img src={logo} alt="Tirumala Earthing Logo" className="h-20 w-auto" />
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              Leading provider of earthing and lightning protection solutions with years of expertise in electrical safety.
+              Tirumala Tech (Tirumala Earthing) is a leading provider of Professional Chemical Earthing, Lightning Arrestors, and Electrodes. Experts in Vijayawada Earthing & Electric infrastructure.
             </p>
             {/* <div className="flex space-x-4">
               {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (

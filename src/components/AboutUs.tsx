@@ -17,11 +17,11 @@ const AboutUs = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            About <span className="text-[#fa171a]">Us</span>
+            About <span className="text-[#fa171a]">Tirumala Earthing</span>
           </h1>
           <div className="w-24 h-1 bg-[#fa171a] mx-auto mb-4" />
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Learn more about our company and our commitment to excellence
+            Trusted since 2001, <span className="font-semibold text-[#fa171a]">Tirumala Tech (Tirumala Earthing)</span> is your premier partner for professional earthing solutions and lightning protection in Vijayawada.
           </p>
         </motion.div>
 
@@ -137,8 +137,8 @@ const AboutUs = () => {
                   <button
                     onClick={() => setActiveTab('mission')}
                     className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${activeTab === 'mission'
-                        ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
-                        : '!text-[#fa171a]'
+                      ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
+                      : '!text-[#fa171a]'
                       }`}
                   >
                     Mission
@@ -146,8 +146,8 @@ const AboutUs = () => {
                   <button
                     onClick={() => setActiveTab('vision')}
                     className={`flex-1 px-6 py-4 text-lg font-bold transition-colors ${activeTab === 'vision'
-                        ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
-                        : '!text-[#fa171a]'
+                      ? 'text-[#fa171a] border-b-4 border-[#fa171a]/60'
+                      : '!text-[#fa171a]'
                       }`}
                   >
                     Vision
