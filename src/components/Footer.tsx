@@ -120,9 +120,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-white shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm">
-                  11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001
-                </span>
+                <div className="flex flex-col gap-1">
+                  <span className="text-gray-400 text-sm">
+                    Columbo Electricals, 11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001
+                  </span>
+                  <a
+                    href={'https://maps.app.goo.gl/Dahd4znJaJ1RA2at7'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-gray-400 hover:underline font-medium text-sm whitespace-nowrap"
+                  >
+                    Get Direction →
+                  </a>
+                </div>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-white shrink-0" />

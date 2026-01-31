@@ -63,7 +63,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Address',
-      content: '11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001',
+      content: 'Columbo Electricals, 11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001',
+      link: 'https://maps.app.goo.gl/Dahd4znJaJ1RA2at7',
       color: 'from-[#fa171a] to-[#fa171a]',
     },
   ];
@@ -212,7 +213,19 @@ const Contact = () => {
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">
                       {info.title}
                     </h4>
-                    <p className="text-gray-600">{info.content}</p>
+                    <p className="text-gray-600">
+                      {info.content}
+                      {info.link && (
+                        <a
+                          href={info.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block ml-2 text-[#fa171a] hover:underline font-medium text-sm whitespace-nowrap"
+                        >
+                          Get Direction →
+                        </a>
+                      )}
+                    </p>
                   </div>
                 </div>
               </motion.div>
