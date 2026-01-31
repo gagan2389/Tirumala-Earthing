@@ -57,7 +57,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'info@tirumalaearthing.com',
+      content: 'info@tirumalatech.in',
       color: 'from-[#fa171a] to-[#fa171a]',
     },
     {

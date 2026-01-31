@@ -21,7 +21,7 @@ const Certificates = () => {
                     className="text-center mb-16"
                 >
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                        Our <span className="text-[#fa171a]">Certificates</span>
+                        Tirumala Tech <span className="text-[#fa171a]">Certificates</span>
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                         We take pride in our commitment to quality and safety. Here are our certifications and recognitions.

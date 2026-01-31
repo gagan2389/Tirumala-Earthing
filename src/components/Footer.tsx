@@ -147,7 +147,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-white" />
-                <span className="text-gray-400 text-sm">info@tirumalaearthing.com</span>
+                <span className="text-gray-400 text-sm">info@tirumalatech.in</span>
               </li>
             </ul>
           </motion.div>

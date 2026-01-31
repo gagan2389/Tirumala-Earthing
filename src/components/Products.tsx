@@ -84,7 +84,7 @@ const Products = () => {
                     className="text-center mb-12 md:mb-16"
                 >
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                        Our <span className="text-[#fa171a]">Products</span>
+                        Tirumala Earthing <span className="text-[#fa171a]">Products</span>
                     </h1>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
                         Premium Chemical Earthing, Lightning Arrestors, and Electrodes designed by <span className="font-semibold text-[#fa171a]">Tirumala Earthing</span>. High-quality solutions for safety across Vijayawada.
@@ -112,7 +112,7 @@ const Products = () => {
                                 />
                             </div>
                             <div className="p-5 md:p-6 flex flex-col flex-grow">
-                                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                                <h3 className="text-xl md:text-2xl font-bold text-[#fa171a] mb-3">
                                     {product.name}
                                 </h3>
                                 <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">

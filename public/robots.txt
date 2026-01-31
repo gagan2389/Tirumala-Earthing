@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tirumalaearthing.com/sitemap.xml
+Sitemap: https://tirumalatech.in/sitemap.xml

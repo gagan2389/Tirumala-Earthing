@@ -28,7 +28,7 @@ const SafetyDesign = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-[#fa171a] mb-6">
-            Safety through design
+            Safety through design by Tirumala Tech
           </h2>
           <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             We specialize in providing focused solutions and bring system efficiency to keep businesses and services running efficiently. We have 15+ years of experience in providing consultancy and solutions to a wide range of industries across the globe.
