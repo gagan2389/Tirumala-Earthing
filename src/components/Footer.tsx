@@ -36,31 +36,13 @@ const Footer = () => {
         { label: 'Products', href: '/products', isRoute: true },
         { label: 'Services', href: '#services', isRoute: false },
       ],
-    },
-    {
-      title: 'Products',
-      links: [
-        { label: 'Earthing Electrodes', href: '/products', isRoute: true },
-        { label: 'Lightning Arresters', href: '/products', isRoute: true },
-        { label: 'Earthing Accessories', href: '/products', isRoute: true },
-        { label: 'Chemical Earthing', href: '/products', isRoute: true },
-      ],
-    },
-    {
-      title: 'Services',
-      links: [
-        { label: 'Installation', href: '#services' },
-        { label: 'Maintenance', href: '#services' },
-        { label: 'Consultation', href: '#services' },
-        { label: 'Testing', href: '#services' },
-      ],
-    },
+    }
   ];
 
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -96,6 +78,7 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="md:text-center"
             >
               <h4 className="text-lg font-semibold mb-4">{section.title}</h4>
               <ul className="space-y-2">
@@ -136,17 +119,17 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-10 h-10 text-white" />
+                <MapPin className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
                   11-10-37, Ammisetty Vari St, Islampet, Vijayawada, Andhra Pradesh 520001
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-white" />
+                <Phone className="w-5 h-5 text-white shrink-0" />
                 <span className="text-gray-400 text-sm">+91-9347644772 / +91-8332993388</span>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-white" />
+                <Mail className="w-5 h-5 text-white shrink-0" />
                 <span className="text-gray-400 text-sm">info@tirumalatech.in</span>
               </li>
             </ul>
