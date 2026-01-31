@@ -60,8 +60,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item, index) => (
-              item.isRoute ? (
+            {menuItems.map((item, index) => {
+              const isActive = item.isRoute
+                ? location.pathname === item.href
+                : location.pathname === '/' && location.hash === item.href;
+
+              return item.isRoute ? (
                 <motion.div
                   key={item.href}
                   initial={{ opacity: 0, y: -20 }}
@@ -71,7 +75,8 @@ const Header = () => {
                 >
                   <Link
                     to={item.href}
-                    className="text-gray-700 hover:text-[#fa171a] font-medium transition-colors"
+                    className={`font-medium transition-colors ${isActive ? 'text-[#fa171a]' : 'text-gray-700 hover:text-[#fa171a]'
+                      }`}
                   >
                     {item.label}
                   </Link>
@@ -84,12 +89,13 @@ const Header = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
-                  className="text-gray-700 hover:text-[#fa171a] font-medium transition-colors"
+                  className={`font-medium transition-colors ${isActive ? 'text-[#fa171a]' : 'text-gray-700 hover:text-[#fa171a]'
+                    }`}
                 >
                   {item.label}
                 </motion.a>
-              )
-            ))}
+              );
+            })}
           </nav>
 
           {/* Contact Info */}
@@ -120,12 +126,17 @@ const Header = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden py-4 border-t"
           >
-            {menuItems.map((item) => (
-              item.isRoute ? (
+            {menuItems.map((item) => {
+              const isActive = item.isRoute
+                ? location.pathname === item.href
+                : location.pathname === '/' && location.hash === item.href;
+
+              return item.isRoute ? (
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="block py-2 text-gray-700 hover:text-blue-600"
+                  className={`block py-2 font-medium transition-colors ${isActive ? 'text-[#fa171a]' : 'text-gray-700 hover:text-[#fa171a]'
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -134,13 +145,14 @@ const Header = () => {
                 <a
                   key={item.href}
                   href={location.pathname === '/' ? item.href : `/${item.href}`}
-                  className="block py-2 text-gray-700 hover:text-blue-600"
+                  className={`block py-2 font-medium transition-colors ${isActive ? 'text-[#fa171a]' : 'text-gray-700 hover:text-[#fa171a]'
+                    }`}
                   onClick={() => handleNavClick(item.href, false)}
                 >
                   {item.label}
                 </a>
-              )
-            ))}
+              );
+            })}
           </motion.div>
         )}
       </div>
