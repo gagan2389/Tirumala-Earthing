@@ -12,6 +12,7 @@ const Header = () => {
     { label: 'Home', href: '/', isRoute: true },
     { label: 'About Us', href: '/about', isRoute: true },
     { label: 'Products', href: '/products', isRoute: true },
+    // { label: 'Certificates', href: '/certificates', isRoute: true },
     // { label: 'Services', href: '#services', isRoute: false },
     { label: 'Contact', href: '/contact', isRoute: true },
   ];
@@ -52,7 +53,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="Tirumala Earthing Logo"
-                className="w-40 h-40 object-contain"
+                className="w-15 h-15 object-contain"
               />
             </motion.div>
           </Link>
